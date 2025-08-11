@@ -1,0 +1,259 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Stack Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<!-- Include EmailJS Script -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "JFPMzJuAjsa2--urK",
+      });
+   })();
+</script>
+
+</head>
+<body>
+  <!-- Navigation -->
+ <nav>
+  <div class="nav-left">
+    <img src="assets/profilephoto.png" alt="Profile" class="nav-profile-pic" />
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+</nav>
+
+  <!-- Social Sidebar -->
+  <div class="social-sidebar">
+    <a href="https://www.linkedin.com/in/sevella-saiteja-webdeveloper"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" /></a>
+    <a href="https://github.com/saitejasevella1914"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /></a>
+    <a href="https://www.instagram.com/iamsaiteja06"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" /></a>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+  <div class="animated-content">
+    <h1 id="animated-text"></h1>
+    <!--<div class="floating-elements">
+      <span class="floating-item">✨ Creative Developer</span>
+      <span class="floating-item">💡 Problem Solver</span>
+      <span class="floating-item">🚀 Tech Enthusiast</span>
+    </div>-->
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="assets/profilephoto.png" alt="Profile Photo" class="profile-pic"/>
+      </div>
+      <div class="flip-card-back">
+        <h2>Hi 👋</h2>
+        <p>Here, I am a Full Stack Developer !</p>
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- About Section -->
+<section id="about" class="about">
+  <div class="about-image">
+    <img src="assets/developer.jpg" alt="Developer" />
+  </div>
+  <div class="about-content">
+    <h2>About Me</h2>
+    <p>
+I am a passionate Full Stack Developer with expertise in building dynamic, scalable, and user-friendly web applications. With a strong foundation in HTML, CSS, JavaScript, and frameworks like React, Node.js, and Express, I specialize in crafting seamless front-end experiences and robust back-end architectures.  
+
+I thrive on solving complex problems, optimizing performance, and implementing responsive designs that enhance user engagement. My experience includes database management (MongoDB, MySQL), API development, authentication systems, and integrating third-party services to create efficient workflows.  
+
+Beyond coding, I am constantly exploring new technologies, best practices, and innovative solutions to stay ahead in the ever-evolving web development landscape. Whether it's refining UI/UX, improving load times, or ensuring security, I am committed to delivering high-quality, scalable applications that make an impact.  
+</p>
+    <div class="buttons">
+      <a href="assets/resume.pdf" class="btn">Resume</a>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </div>
+  
+</section>
+
+  <!-- Skills -->
+  <section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+
+    <!-- Frontend -->
+    <div class="skill-category">
+      <h3>Frontend</h3>
+      <div class="skills-logos">
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skill-category">
+      <h3>Backend</h3>
+      <div class="skills-logos">
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"><span>Express</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-category">
+      <h3>Tools & Platforms</h3>
+      <div class="skills-logos">
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <!-- Projects -->
+  <section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+
+    <!-- Project Card -->
+    <div class="project-card">
+      <img src="assets/portfoliowebsite.png" alt="Project Screenshot">
+      <div class="project-info">
+        <h3>PERSONAL PORTFOLIO WEBSITE</h3>
+        <p>A modern personal portfolio blends sleek design with responsive layouts using HTML, CSS, and JavaScript.
+           It features dark mode toggling, smooth animations, interactive project showcases, and contact forms with validation.
+            Enhanced by media queries, animation libraries, and dynamic theme switching, it offers a captivating and accessible experience across all devices.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/saitejasevella1914/saiteja-portfolio-website-using-Reactjs.git" target="_blank" class="btn">Live Demo</a>
+          <button class="btn about-btn">About This</button>
+        </div>
+      </div>
+    </div>
+    <!-- Example second project -->
+    <div class="project-card">
+      <img src="assets/ToDo application.png" alt="Project Screenshot">
+      <div class="project-info">
+        <h3>TO DO APPLICATION USING FULL STACK</h3>
+        <p>A full-stack task manager leverages Node.js and Express for backend routing and logic, while MongoDB handles data persistence.
+           It includes user authentication and secure sessions, enabling personalized task views. Users can create, read, update, and delete tasks through intuitive endpoints. 
+          This scalable architecture ensures fast performance and seamless data management.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/saitejasevella1914/TO-DO-List-React_App_Project.git" target="_blank" class="btn">Live Demo</a>
+          <button class="btn about-btn">About This</button>
+        </div>
+      </div>
+    </div>
+ <!-- Example Third project -->
+    <div class="project-card">
+      <img src="assets/E-commercewebsite.png" alt="Project Screenshot">
+      <div class="project-info">
+        <h3>E-COMMERCE WEBSITE</h3>
+        <p>An e-commerce website using frontend is a web-based platform where users can view and interact with products or services through a user-friendly interface.
+         The frontend includes all the visual elements like product listings, shopping cart, search bar, navigation menu, and checkout forms.
+         It is built using technologies like HTML, CSS, and JavaScript, and ensures a smooth and responsive experience for customers browsing and buying online.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/saitejasevella1914/Saiteja-E-Commerce-Website.git" target="_blank" class="btn">Live Demo</a>
+          <button class="btn about-btn">About This</button>
+        </div>
+      </div>
+    </div>
+     <!-- Example fourth  project -->
+    <div class="project-card">
+      <img src="assets/quickchat.png" alt="Project Screenshot">
+      <div class="project-info">
+        <h3>QUICK CHAT APP </h3>
+        <p>Real-Time Chat Application — Full Stack Development with Socket.IO
+
+Developed a real-time chat platform enabling instant messaging between multiple users using Socket.IO for WebSocket-based communication.
+Built a responsive front-end with React.js (or plain HTML/CSS/JS) to deliver a smooth user experience, including live message updates without page refresh.
+Implemented a Node.js and Express.js backend for efficient message handling, user authentication, and persistent data storage with MongoDB.
+Integrated features like online/offline user status, typing indicators, and unread message counts for enhanced interactivity.
+Optimized performance by using event-driven architecture and lightweight data payloads, reducing latency in message delivery.
+Tech Stack: React.js / HTML / CSS / JavaScript | Node.js | Express.js | Socket.IO | MongoDB | JWT Authentication | REST API</p>
+        <div class="project-buttons">
+          <a href="https://github.com/saitejasevella1914/QuickChat_With_Socket.io_Using_FullStack.git" target="_blank" class="btn">Live Demo</a>
+          <button class="btn about-btn">About This</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<!-- Services Section -->
+<section id="services" class="services-container">
+  <h2>Services</h2>
+
+  <!-- Services Wrapper -->
+  <div class="services-wrapper">
+    <div class="service-card">
+      <img src="assets/Forntend.jpg" alt="Web Development">
+      <h3>Web Development</h3>
+      <p>Building modern, responsive websites using HTML, CSS, JavaScript, and frameworks like React.</p>
+    </div>
+  </div>
+
+  <!-- Pagination Buttons -->
+  <div class="pagination">
+    <button onclick="changePage(-1)" class="prev-btn" disabled>❮ Prev</button>
+    <span id="page-number">1</span>
+    <button onclick="changePage(1)" class="next-btn">Next ❯</button>
+  </div>
+
+  <!-- Contact Me Button -->
+  <div class="services-footer">
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+</section>
+  
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendEmail(event)">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+ <!-- Footer -->
+<footer>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/sevella-saiteja-webdeveloper" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/saitejasevella1914" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+    </a>
+    <a href="https://www.instagram.com/iamsaiteja06" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+    </a>
+  </div>
+  <p>Designed & Developed with <span style="color: red;">❤</span> by <strong>SAI TEJA</strong></p>
+    <p>&copy; <span id="year"></span> Portfolio. All Rights Reserved.</p>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</footer>
+
+</body>
+</html>
